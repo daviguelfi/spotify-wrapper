@@ -9,12 +9,12 @@ import {
   searchArtists,
   searchTracks,
   searchPlaylists,
-} from '../src/main';
+} from '../src/search';
 
 chai.use(sinonChai);
 global.fetch = require('node-fetch'); // habilitando o global fetch na interface
 
-describe('SpotifyWrapper', () => {
+describe('Search', () => {
   describe('Smoke Tests', () => {
     it('should exist the search method', () => {
       expect(search).to.exist;
