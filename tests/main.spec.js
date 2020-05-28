@@ -16,12 +16,6 @@ global.fetch = require('node-fetch'); // habilitando o global fetch na interface
 
 describe('SpotifyWrapper', () => {
   describe('Smoke Tests', () => {
-    // search (generico) - + de 1 tipo
-    // searchAlbums
-    // searchArtists
-    // searchTracks
-    // searchPlaylists
-
     it('should exist the search method', () => {
       expect(search).to.exist;
     });
